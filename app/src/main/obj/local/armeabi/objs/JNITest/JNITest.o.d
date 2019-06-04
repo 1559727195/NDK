@@ -1,1 +1,1 @@
-./obj/local/armeabi/objs/JNITest/JNITest.o: jni/JNITest.c
+./obj/local/armeabi/objs/JNItest/JNItest.o: jni/JNItest.c

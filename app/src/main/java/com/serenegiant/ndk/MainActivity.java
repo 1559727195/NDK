@@ -8,11 +8,6 @@ public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
 
-    static {
-        System.loadLibrary("JNITest");
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = findViewById(R.id.sample_text);
 //        tv.setText(stringFromJNI());
         JniClient jniTest = new JniClient();
-        int sum = jniTest.addInt(4,3);
-
-        // Example of a call to a native method
-        tv.setText(jniTest.getStr()+"  "+sum);
+        int sum = jniTest.addInt(4, 3);
+//
+//        // Example of a call to a native method
+        tv.setText(jniTest.getStr() + "  " + sum);
 
     }
 
