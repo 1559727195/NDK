@@ -36,8 +36,8 @@ JavaVM *getVM() {
 
 JNIEnv *getEnv() {
     JNIEnv *env = NULL;
-    if (savedVm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_6) != JNI_OK) {
-    	env = NULL;
+    if (savedVm ->GetEnv(reinterpret_cast<void **>(&env),JNI_VERSION_1_6) != JNI_OK) {
+        env = NULL;
     }
     return env;
 }
